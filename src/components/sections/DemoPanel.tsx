@@ -1,5 +1,6 @@
 import { Card } from "../ui/card";
-import { Badge } from "../ui/badge";
+
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 
 const DemoPanel = () => {
