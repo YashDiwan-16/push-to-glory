@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import { Card } from "../ui/card";
 import { Zap, Shield, BarChart3, Key, Boxes, Github } from "lucide-react";
 
 const FeatureCards = () => {

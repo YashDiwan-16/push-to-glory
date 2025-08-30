@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import { Card } from "../ui/card";
 import { Quote } from "lucide-react";
 
 const Testimonials = () => {

@@ -1,6 +1,6 @@
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card } from "../ui/card";
+import { Badge } from "../ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 
 const DemoPanel = () => {
   return (
