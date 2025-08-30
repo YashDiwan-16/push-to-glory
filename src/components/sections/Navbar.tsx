@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const Navbar = () => {
   return (
