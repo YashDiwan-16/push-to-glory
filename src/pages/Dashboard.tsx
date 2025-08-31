@@ -1,5 +1,6 @@
 import Navbar from "../components/sections/Navbar";
 import DashboardHeader from "../components/dashboard/DashboardHeader";
+import DashboardStats from "../components/dashboard/DashboardStats";
 import BalanceCard from "../components/dashboard/BalanceCard";
 import TransactionHistory from "../components/dashboard/TransactionHistory";
 import QuickActions from "../components/dashboard/QuickActions";
@@ -13,6 +14,7 @@ const Dashboard = () => {
       <main className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <DashboardHeader />
+          <DashboardStats />
           
           {/* Dashboard Grid */}
           <div className="grid lg:grid-cols-3 gap-8">
