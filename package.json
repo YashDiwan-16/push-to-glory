@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "algorand-demo": "npx tsx src/algorand/example.ts",
+    "algorand-full": "npx tsx src/algorand/AlgorandDemo.ts"
   },
   "dependencies": {
     "@algorandfoundation/algokit-utils": "^9.1.2",
