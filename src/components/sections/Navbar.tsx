@@ -28,7 +28,7 @@ const Navbar = () => {
           </nav>
           
           <div className="flex items-center gap-3">
-            <Button variant="outline" size="sm" className="hidden sm:inline-flex">
+            <Button variant="outline" size="sm" className="hidden sm:inline-flex text-primary-foreground hover:bg-primary/90">
               Sign In
             </Button>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
