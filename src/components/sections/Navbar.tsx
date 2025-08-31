@@ -47,8 +47,8 @@ const Navbar = () => {
                   <Wallet className="h-4 w-4" />
                   {isConnecting ? 'Connecting...' : 'Connect Pera'}
                 </Button>
-                
-                <Button variant="outline" size="sm" className="hidden lg:inline-flex" >
+
+                <Button variant="outline" size="sm" className="hidden lg:inline-flex bg-teal-600 text-white hover:bg-teal-600/90" >
                   Sign In
                 </Button>
               </>
