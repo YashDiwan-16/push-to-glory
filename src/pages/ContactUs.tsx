@@ -1,6 +1,7 @@
 import Navbar from "../components/sections/Navbar";
 import ContactForm from "../components/contact/ContactForm";
 import BlockchainAnimation from "../components/contact/BlockchainAnimation";
+import ContactFeatures from "../components/contact/ContactFeatures";
 
 const ContactUs = () => {
   return (
@@ -20,46 +21,14 @@ const ContactUs = () => {
           </div>
           
           {/* Two Column Layout */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left Side - Blockchain Animation */}
             <div className="order-2 lg:order-1">
               <div className="sticky top-24">
                 <BlockchainAnimation />
                 
-                {/* Additional Info */}
-                <div className="mt-8 space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-teal-600/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-sans font-semibold text-lg text-slate-900 mb-1">
-                        Secure by Design
-                      </h3>
-                      <p className="text-slate-500">
-                        Built on Algorand's secure blockchain infrastructure with enterprise-grade security.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-blue-600/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-sans font-semibold text-lg text-slate-900 mb-1">
-                        24/7 Support
-                      </h3>
-                      <p className="text-slate-500">
-                        We typically respond within 24 hours to help resolve any issues or questions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                {/* Features Grid */}
+                <ContactFeatures />
               </div>
             </div>
             
