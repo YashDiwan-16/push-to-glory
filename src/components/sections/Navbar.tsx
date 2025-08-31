@@ -39,6 +39,9 @@ const Navbar = () => {
             <Link to="/" className="text-slate-500 hover:text-slate-900 transition-colors">
               Home
             </Link>
+            <Link to="/dashboard" className="text-slate-500 hover:text-slate-900 transition-colors">
+              Dashboard
+            </Link>
             <a href="#features" className="text-slate-500 hover:text-slate-900 transition-colors">
               Features
             </a>
@@ -81,6 +84,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Home
+              </Link>
+              <Link 
+                to="/dashboard" 
+                className="text-slate-500 hover:text-slate-900 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Dashboard
               </Link>
               <a 
                 href="#features" 
