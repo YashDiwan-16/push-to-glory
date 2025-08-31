@@ -7,7 +7,7 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import CTA from "@/components/sections/CTA";
-import Footer from "@/components/sections/footer";
+import Footer from "@/components/sections/Footer";
 
 const Index = () => {
   return (
