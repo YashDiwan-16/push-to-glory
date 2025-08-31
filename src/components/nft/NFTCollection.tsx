@@ -252,7 +252,7 @@ const NFTCollection: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-2 right-2">
-                  <Badge variant={getRarityColor(nft.rarity) as any} size="sm">
+                  <Badge variant={nft.rarity as 'primary' | 'secondary' | 'success' | 'warning' | 'danger'} size="sm">
                     {nft.rarity}
                   </Badge>
                 </div>
@@ -317,7 +317,7 @@ const NFTCollection: React.FC = () => {
                 <p className="font-semibold text-slate-900">{nft.price} ALGO</p>
               </div>
               <div className="col-span-2 flex items-center">
-                <Badge variant={getRarityColor(nft.rarity) as any} size="sm">
+                <Badge variant={getRarityColor(nft.rarity) as 'primary' | 'secondary' | 'success' | 'warning' | 'danger'} size="sm">
                   {nft.rarity}
                 </Badge>
               </div>

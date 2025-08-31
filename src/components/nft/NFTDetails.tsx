@@ -97,7 +97,7 @@ const NFTDetails: React.FC<NFTDetailsProps> = ({ nftId }) => {
           <div>
             <div className="flex items-center space-x-3 mb-2">
               <h1 className="text-3xl font-bold text-slate-900">{nft.name}</h1>
-              <Badge variant={getRarityColor(nft.rarity) as any} size="md">
+              <Badge variant={getRarityColor(nft.rarity) as 'primary' | 'secondary' | 'success' | 'warning' | 'danger'} size="lg">
                 {nft.rarity}
               </Badge>
             </div>

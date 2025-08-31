@@ -65,7 +65,7 @@ const LiquidityPools: React.FC = () => {
     return `${icons[tokenA as keyof typeof icons] || '🪙'} / ${icons[tokenB as keyof typeof icons] || '🪙'}`;
   };
 
-  const totalMyLiquidity = pools.reduce((sum, pool) => sum + pool.myLiquidity, 0);
+  const totalMyLiquidity = pools.reduce((sum, pool) => sum + pool.userLiquidity, 0);
 
   return (
     <div className="space-y-6">
@@ -92,7 +92,7 @@ const LiquidityPools: React.FC = () => {
         <div className="mt-4 grid grid-cols-3 gap-4">
           <div>
             <p className="text-teal-100 text-sm">Positions</p>
-            <p className="text-lg font-semibold">{pools.filter(p => p.myLiquidity > 0).length}</p>
+            <p className="text-lg font-semibold">{pools.filter(p => p.userLiquidity > 0).length}</p>
           </div>
           <div>
             <p className="text-teal-100 text-sm">24h Fees Earned</p>
@@ -111,11 +111,11 @@ const LiquidityPools: React.FC = () => {
           <div key={pool.id} className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center space-x-4">
-                <div className="text-3xl">{getPoolIcon(pool.tokenA, pool.tokenB)}</div>
+                <div className="text-3xl">{getPoolIcon(pool.token1.symbol, pool.token2.symbol)}</div>
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900">{pool.name}</h3>
                   <div className="flex items-center space-x-4 text-sm text-slate-500">
-                    <span>TVL: ${pool.tvl.toLocaleString()}</span>
+                    <span>TVL: ${pool.totalLiquidity.toLocaleString()}</span>
                     <span>Volume: ${pool.volume24h.toLocaleString()}</span>
                   </div>
                 </div>
