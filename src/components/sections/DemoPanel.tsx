@@ -21,24 +21,19 @@ const DemoPanel = () => {
             <Tabs defaultValue="overview" className="w-full">
               <div className="border-b border-slate-500/10 bg-background">
                 <TabsList className="grid w-full grid-cols-3 bg-transparent h-auto p-0">
-                  <TabsTrigger 
-                    value="overview" 
-                    className="data-[state=active]:bg-primary/10 data-[state=active]:text-primary py-4 px-6 rounded-none border-b-2 border-transparent data-[state=active]:border-primary"
-                  >
-                    Overview
+                  <TabsTrigger value="overview" className="!text-white data-[state=active]:bg-primary/10 data-[state=active]:!text-white py-4 px-6 rounded-none border-b-2 border-transparent data-[state=active]:border-primary">
+                                     Overview
                   </TabsTrigger>
-                  <TabsTrigger 
-                    value="activity" 
-                    className="data-[state=active]:bg-primary/10 data-[state=active]:text-primary py-4 px-6 rounded-none border-b-2 border-transparent data-[state=active]:border-primary"
-                  >
-                    Activity
-                  </TabsTrigger>
-                  <TabsTrigger 
-                    value="send" 
-                    className="data-[state=active]:bg-primary/10 data-[state=active]:text-primary py-4 px-6 rounded-none border-b-2 border-transparent data-[state=active]:border-primary"
-                  >
-                    Send
-                  </TabsTrigger>
+
+              <TabsTrigger value="activity" className="!text-white data-[state=active]:bg-primary/10 data-[state=active]:!text-white py-4 px-6 rounded-none border-b-2 border-transparent data-[state=active]:border-primary">
+                Activity
+              </TabsTrigger>
+
+                <TabsTrigger value="send" className="!text-white data-[state=active]:bg-primary/10 data-[state=active]:!text-white py-4 px-6 rounded-none border-b-2 border-transparent data-[state=active]:border-primary">
+                  Send
+                </TabsTrigger>
+
+
                 </TabsList>
               </div>
               
