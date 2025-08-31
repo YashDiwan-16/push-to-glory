@@ -6,7 +6,7 @@ import walletDashboard from "@/assets/wallet-dashboard.jpg";
 const Hero = () => {
   return (
     <section className="py-16 lg:py-24">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className=" mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="text-center lg:text-left">
             <h1 className="font-sans font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mb-6">
