@@ -193,7 +193,7 @@ const InvestmentGoals: React.FC = () => {
                   </div>
                   <ProgressBar 
                     progress={progress} 
-                    color={getProgressColor(goal.status) as any}
+                    color={getProgressColor(goal.status) as 'teal' | 'blue' | 'green' | 'yellow' | 'red'}
                     showPercentage 
                   />
                 </div>

@@ -71,7 +71,7 @@ const TransactionCard: React.FC<TransactionCardProps> = ({ transaction }) => {
           }`}>
             {transaction.type === 'receive' ? '+' : '-'}{transaction.amount} {transaction.asset}
           </div>
-          <Badge variant={getStatusColor() as any} size="sm">
+          <Badge variant={getStatusColor() as 'primary' | 'secondary' | 'success' | 'warning' | 'danger'} size="sm">
             {transaction.status}
           </Badge>
         </div>

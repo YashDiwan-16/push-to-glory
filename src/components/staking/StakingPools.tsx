@@ -85,7 +85,7 @@ const StakingPools: React.FC = () => {
                 <h3 className="text-lg font-semibold text-slate-900">{pool.name}</h3>
                 <p className="text-sm text-slate-500">{pool.symbol}</p>
               </div>
-              <Badge variant={getStatusColor(pool.status) as any} size="sm">
+              <Badge variant={getStatusColor(pool.status) as 'primary' | 'secondary' | 'success' | 'warning' | 'danger'} size="sm">
                 {pool.status.replace('-', ' ')}
               </Badge>
             </div>

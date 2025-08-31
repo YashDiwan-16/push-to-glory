@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const BackupPhrase = () => {
   const [isRevealed, setIsRevealed] = useState(false);
-  const [isVerified, setIsVerified] = useState(true);
+  const [isVerified] = useState(true);
   const [showWarning, setShowWarning] = useState(false);
 
   // Mock backup phrase - in real app, this would be encrypted/secured
