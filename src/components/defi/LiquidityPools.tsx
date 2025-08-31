@@ -2,60 +2,58 @@ import React from 'react';
 import { Droplets, Plus, Minus, TrendingUp, Info } from 'lucide-react';
 import Badge from '../common/Badge';
 
-interface LiquidityPool {
+interface Pool {
   id: string;
   name: string;
-  tokenA: string;
-  tokenB: string;
+  token1: { symbol: string; amount: number };
+  token2: { symbol: string; amount: number };
   apy: number;
-  tvl: number;
-  myLiquidity: number;
-  fees24h: number;
+  totalLiquidity: number;
   volume24h: number;
-  priceImpact: number;
+  fees24h: number;
+  userLiquidity: number;
+  userShare: number;
 }
 
 const LiquidityPools: React.FC = () => {
-  const [pools] = React.useState<LiquidityPool[]>([
+  const [pools] = React.useState<Pool[]>([
     {
       id: '1',
       name: 'ALGO/USDC',
-      tokenA: 'ALGO',
-      tokenB: 'USDC',
-      apy: 15.4,
-      tvl: 2500000,
-      myLiquidity: 1250,
-      fees24h: 145.80,
-      volume24h: 89500,
-      priceImpact: 0.02
+      token1: { symbol: 'ALGO', amount: 125000 },
+      token2: { symbol: 'USDC', amount: 45000 },
+      apy: 12.5,
+      totalLiquidity: 285000,
+      volume24h: 125000,
+      fees24h: 1250,
+      userLiquidity: 5000,
+      userShare: 1.75
     },
     {
       id: '2',
-      name: 'ETH/ALGO',
-      tokenA: 'ETH',
-      tokenB: 'ALGO',
-      apy: 18.9,
-      tvl: 1800000,
-      myLiquidity: 0,
-      fees24h: 298.45,
-      volume24h: 156300,
-      priceImpact: 0.05
+      name: 'ETH/USDC',
+      token1: { symbol: 'ETH', amount: 85 },
+      token2: { symbol: 'USDC', amount: 215000 },
+      apy: 18.3,
+      totalLiquidity: 432000,
+      volume24h: 89000,
+      fees24h: 890,
+      userLiquidity: 2500,
+      userShare: 0.58
     },
     {
       id: '3',
-      name: 'USDC/USDT',
-      tokenA: 'USDC',
-      tokenB: 'USDT',
-      apy: 8.2,
-      tvl: 5200000,
-      myLiquidity: 850,
-      fees24h: 67.20,
-      volume24h: 234500,
-      priceImpact: 0.01
+      name: 'ALGO/ETH',
+      token1: { symbol: 'ALGO', amount: 95000 },
+      token2: { symbol: 'ETH', amount: 45 },
+      apy: 15.7,
+      totalLiquidity: 195000,
+      volume24h: 45000,
+      fees24h: 450,
+      userLiquidity: 0,
+      userShare: 0
     }
   ]);
-
-  const [selectedPool, setSelectedPool] = React.useState<string | null>(null);
 
   const getPoolIcon = (tokenA: string, tokenB: string) => {
     const icons = {

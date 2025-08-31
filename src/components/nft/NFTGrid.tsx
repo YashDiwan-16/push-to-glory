@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, Filter, Grid, List, SortAsc } from "lucide-react";
+import { Search, Grid, List } from "lucide-react";
 import { Card } from "../ui/card";
 import { Button } from "../ui/button";
 
