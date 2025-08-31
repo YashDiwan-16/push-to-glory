@@ -26,7 +26,7 @@ const HowItWorks = () => {
 
   return (
     <section className="py-16 lg:py-24">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className=" mx-auto px-4 md:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
             Get started in minutes
